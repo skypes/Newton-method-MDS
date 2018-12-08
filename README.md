@@ -1,6 +1,5 @@
-# Newton-method-MDS
+# Manual for Multidimensional Scaling Viewer
 MultiDimensional Scaling using Newton's method
-Manual for Multidimensional Scaling Viewer
 
 Environmental Requirement
 Jdk 1.8 or later
