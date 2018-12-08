@@ -26,21 +26,14 @@ Note: The distance matrix must be save as a csv file format.
 
 Two steps to generate MDS figure:
 Step 1. Create a distance matrix, named simple_ matrix.csv, using above distance data.
-Step 2. Issue following command to generate MDS figure:
+Step 2. Issue following command to generate MDS figure:<br/>
 #java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist
 
-To generate MDS figure with colored data points, we just need to provide a color map file. The format of color map file is shown as following (tab-separated):
+To generate MDS figure with colored data points, we just need to provide a color map file. The format of color map file is shown as following (tab-separated):<br/>
 
-
-<table border="0">
-  <tr> <td>a6</td><td>b5</td></tr>
-  <tr> <td>a1</td><td>b4</td></tr>
-  <tr> <td>a2</td><td>b3</td></tr>
-</table> 
-
-0 #00FF00<br/>
-1 #00FF00<br/>
-2 #00FF00<br/>
+0	#00FF00<br/>
+1	#00FF00<br/>
+2	#00FF00<br/>
 3	#00FF00<br/>
 4	#00FF00<br/>
 5	#FF0000<br/>
@@ -50,31 +43,26 @@ To generate MDS figure with colored data points, we just need to provide a color
 9	#FF0000<br/>
 10	#FF0000<br/>
 
-Save above color map as a file (named color.map), and issues following command to generate MDS figure:
-
+Save above color map as a file (named color.map), and issues following command to generate MDS figure:<br/>
 #java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv color=path_to_color_map/color.map dist=path_to_dist
 
 **Example for generating MDS by using multiple alignment results (Clustal Omega)**
-Before generating MDS figure, a multiple sequence alignment file must be prepared. We can issue following command to generating MDS figure (the multiple sequence alignment file named msa.ma):
-
+Before generating MDS figure, a multiple sequence alignment file must be prepared. We can issue following command to generating MDS figure (the multiple sequence alignment file named msa.ma):<br/>
 #java -jar mds.jar mode=multiAlignment msa=path_to_msa_file/msa.ma matrix=path_to_matrix_file\simple_matrix.csv dist=path_to_dist
 
-You just need to give a color map file to get a MDS graphic with colored data points, the command show as following:
-
+You just need to give a color map file to get a MDS graphic with colored data points, the command show as following:<br/>
 #java -jar mds.jar mode=multiAlignment msa=path_to_msa_file/msa.ma matrix=path_to_matrix_file\simple_matrix.csv color=path_to_color_map\color.map dist=path_to_dist
 
 **Example for generating MDS by using SNP distance matrix from lyve-set**
-Before generating MDS graphic, a SNP distance matrix file must be prepared, the file name often should be out.pairwiseMatrix.tsv. We can issue following command to generating MDS plot:
-
+Before generating MDS graphic, a SNP distance matrix file must be prepared, the file name often should be out.pairwiseMatrix.tsv. We can issue following command to generating MDS plot:<br/>
 #java -jar mds.jar mode=lyve-set pairwiseMatrix=path_to_SNP_file/out.pairwiseMatrix.tsv dist=path_to_dist
 
 **Example for generating MDS by using multiple alignment result from Parsnp**
-Before plotting MDS figure, a Parsnp multiple alignment file must be prepared (the file named parsnp.xmfa). We can issue following command to plot MDS figure: 
-
+Before plotting MDS figure, a Parsnp multiple alignment file must be prepared (the file named parsnp.xmfa). We can issue following command to plot MDS figure: <br/>
 #java -jar mds.jar mode=parsnp xmfa=path_to_parsnp_file/parsnp.xmfa dist=path_to_dist
 
 **Affinity Propagation**
-All of MDS coordinate file, file extension with coods, can be cluster by affinity propagation. We can issue following command to plot MDS figure, which clustered by affinity propagation:
+All of MDS coordinate file, file extension with coods, can be cluster by affinity propagation. We can issue following command to plot MDS figure, which clustered by affinity propagation:<br/>
 #java -cp mds.jar utils.AffinityPropagation -label coods=path_to_coods dist=path_to_dist
 
 
