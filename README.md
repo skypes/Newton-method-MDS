@@ -31,7 +31,7 @@ Step 2. Issue following command to generate MDS figure:
 
 To generate MDS figure with colored data points, we just need to provide a color map file. The format of color map file is shown as following (tab-separated):
 
-
+\x24
 0\t#00FF00<br/>
 1\0x09#00FF00<br/>
 2(0x09)#00FF00<br/>
