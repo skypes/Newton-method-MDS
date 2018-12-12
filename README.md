@@ -23,6 +23,17 @@ The following is a simple example to generate MDS figure by using a distance mat
 10,45,38,34,35,36,9,9,9,4,2,0
 </code></pre></div>
 
+Note: The distance matrix must be save as a csv file format.
+
+Two steps to generate MDS figure:
+Step 1. Create a distance matrix, named simple_ matrix.csv, using above distance data.
+Step 2. Issue following command to generate MDS figure:<br/>
+<div><pre><code>
+java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist
+</code></pre></div>
+
+
+
 # Manual for Multidimensional Scaling Viewer
 MultiDimensional Scaling using Newton's method
 
