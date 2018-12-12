@@ -1,3 +1,12 @@
+<h2>Manual for Multidimensional Scaling Viewer</h2>
+MultiDimensional Scaling using Newton's method
+
+<h2>Environmental Requirement</h2>
+Jdk 1.8 or later
+
+<h2>How to run</h2>
+<div><pre><code>$ unzip travelTree-wgMLST.ova.zip</code></pre></div>
+
 # Manual for Multidimensional Scaling Viewer
 MultiDimensional Scaling using Newton's method
 
