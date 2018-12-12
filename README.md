@@ -9,7 +9,7 @@ Jdk 1.8 or later
 <li><p>A Simple Example<br>
 The following is a simple example to generate MDS figure by using a distance matrix file. The format of matrix file shows as following:
 
-<div><pre><code>,0,1,2,3,4,5,6,7,8,9,10
+<pre><code>,0,1,2,3,4,5,6,7,8,9,10
 0,0,1,6,9,9,36,38,32,33,38,45
 1,1,0,4,9,7,38,34,15,36,41,38
 2,6,4,0,3,7,37,38,39,20,41,34
@@ -21,19 +21,17 @@ The following is a simple example to generate MDS figure by using a distance mat
 8,33,36,20,38,37,8,6,6,0,3,4
 9,38,41,41,32,31,7,8,9,3,0,2
 10,45,38,34,35,36,9,9,9,4,2,0
-</code></pre></div>
+</code></pre>
 
 Note: The distance matrix must be save as a csv file format.<br/>
 
 Two steps to generate MDS figure:<br/>
 Step 1. Create a distance matrix, named simple_ matrix.csv, using above distance data.<br/>
 Step 2. Issue following command to generate MDS figure:<br/>
-<div><pre><code>
-java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist
-</code></pre></div>
+<div><pre><code>java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist</code></pre></div>
 
 To generate MDS figure with colored data points, we just need to provide a color map file. The format of color map file is shown as following (tab-separated):<br/>
-<div><pre><code>
+<div><pre>
 0	#00FF00
 1	#00FF00
 2	#00FF00
@@ -45,7 +43,7 @@ To generate MDS figure with colored data points, we just need to provide a color
 8	#FF0000
 9	#FF0000
 10	#FF0000
-</code></pre></div>
+</pre></div>
 
 Save above color map as a file (named color.map), and issues following command to generate MDS figure:<br/>
 <div><pre><code>
