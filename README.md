@@ -23,16 +23,34 @@ The following is a simple example to generate MDS figure by using a distance mat
 10,45,38,34,35,36,9,9,9,4,2,0
 </code></pre></div>
 
-Note: The distance matrix must be save as a csv file format.
+Note: The distance matrix must be save as a csv file format.<br/>
 
-Two steps to generate MDS figure:
-Step 1. Create a distance matrix, named simple_ matrix.csv, using above distance data.
+Two steps to generate MDS figure:<br/>
+Step 1. Create a distance matrix, named simple_ matrix.csv, using above distance data.<br/>
 Step 2. Issue following command to generate MDS figure:<br/>
 <div><pre><code>
 java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist
 </code></pre></div>
 
+To generate MDS figure with colored data points, we just need to provide a color map file. The format of color map file is shown as following (tab-separated):<br/>
+<div><pre><code>
+0	#00FF00
+1	#00FF00
+2	#00FF00
+3	#00FF00
+4	#00FF00
+5	#FF0000
+6	#FF0000
+7	#FF0000
+8	#FF0000
+9	#FF0000
+10	#FF0000
+</code></pre></div>
 
+Save above color map as a file (named color.map), and issues following command to generate MDS figure:<br/>
+<div><pre><code>
+java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv color=path_to_color_map/color.map dist=path_to_dist
+</code></pre></div>
 
 # Manual for Multidimensional Scaling Viewer
 MultiDimensional Scaling using Newton's method
