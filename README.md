@@ -1,5 +1,5 @@
-<h2>Manual for Multidimensional Scaling Viewer</h2>
-MultiDimensional Scaling using Newton's method
+<h2>Manual for OutbreakFinder</h2>
+OutbreakFinder is written in Java and compiled into a standalone executable jar file, which can be executed in the Java Runtime Environment 1.8 or later version. Users can also download the source code and compile it into a preferred version. OutbreakFinder can be freely downloaded from https://github.com/skypes/Newton-method-MDS
 
 <h2>Environmental Requirement</h2>
 Jdk 1.8 or later
