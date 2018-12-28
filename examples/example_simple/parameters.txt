@@ -1,0 +1,3 @@
+matrix=simple_matrix.csv
+-label
+prefix=test

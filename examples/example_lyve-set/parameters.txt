@@ -1,0 +1,4 @@
+pairwiseMatrix=out.pairwiseMatrix.tsv
+mode=lyve-set
+color=color.map
+prefix=lyve_set

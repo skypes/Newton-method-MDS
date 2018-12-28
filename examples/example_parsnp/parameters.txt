@@ -1,0 +1,3 @@
+xmfa=parsnp.xmfa
+mode=parsnp
+prefix=parsnp

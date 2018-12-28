@@ -1,0 +1,3 @@
+msa=mafft.ma
+mode=multiAlignment
+prefix=mafft
