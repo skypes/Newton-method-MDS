@@ -4,6 +4,10 @@ OutbreakFinder is written in Java and compiled into a standalone executable jar 
 <h2>Environmental Requirement</h2>
 Jdk 1.8 or later
 
+<h2>Quick Start</h2>
+There are four examples in the examples directory, such as example_lyve-set, example_mafft, example_parsnp and example_simple. Users can easily modify these examples to suit their needs. These examples can be executed using following commands:
+<pre>java -jar OutbreakFinder.jar parameters.txt</pre>
+
 <h2>How to run</h2>
 <ol>
 <li><p>A Simple Example<br>
