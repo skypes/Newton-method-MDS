@@ -31,7 +31,7 @@ Note: The distance matrix must be save as a csv file format.<br/>
 Two steps to generate MDS figure:<br/>
 Step 1. Create a distance matrix, named simple_ matrix.csv, using above distance data.<br/>
 Step 2. Issue following command to generate MDS figure:<br/>
-<pre>java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist</pre>
+<pre>java -jar OutbreakFinder.jar matrix=path_to_matrix_file/simple_matrix.csv dist=path_to_dist</pre>
 
 To generate MDS figure with colored data points, we just need to provide a color map file. The format of color map file is shown as following (tab-separated):<br/>
 <pre>
@@ -49,25 +49,25 @@ To generate MDS figure with colored data points, we just need to provide a color
 </pre>
 
 Save above color map as a file (named color.map), and issues following command to generate MDS figure:<br/>
-<pre>java -jar mds.jar matrix=path_to_matrix_file/simple_matrix.csv color=path_to_color_map/color.map dist=path_to_dist</pre>
+<pre>java -jar OutbreakFinder.jar matrix=path_to_matrix_file/simple_matrix.csv color=path_to_color_map/color.map dist=path_to_dist</pre>
 
 <li><p>Example for generating MDS by using multiple alignment results (Clustal Omega)<br>
 Before generating MDS figure, a multiple sequence alignment file must be prepared. We can issue following command to generating MDS figure (the multiple sequence alignment file named msa.ma):<br/>
-<pre>java -jar mds.jar mode=multiAlignment msa=path_to_msa_file/msa.ma matrix=path_to_matrix_file\simple_matrix.csv dist=path_to_dist</pre>
+<pre>java -jar OutbreakFinder.jar mode=multiAlignment msa=path_to_msa_file/msa.ma matrix=path_to_matrix_file\simple_matrix.csv dist=path_to_dist</pre>
 
 You just need to give a color map file to get a MDS graphic with colored data points, the command show as following:<br/>
-<pre>java -jar mds.jar mode=multiAlignment msa=path_to_msa_file/msa.ma matrix=path_to_matrix_file\simple_matrix.csv color=path_to_color_map\color.map dist=path_to_dist</pre>
+<pre>java -jar OutbreakFinder.jar mode=multiAlignment msa=path_to_msa_file/msa.ma matrix=path_to_matrix_file\simple_matrix.csv color=path_to_color_map\color.map dist=path_to_dist</pre>
 
 <li><p>Example for generating MDS by using SNP distance matrix from lyve-set<br/>
 Before generating MDS graphic, a SNP distance matrix file must be prepared, the file name often should be out.pairwiseMatrix.tsv. We can issue following command to generating MDS plot:<br/>
-<pre>java -jar mds.jar mode=lyve-set pairwiseMatrix=path_to_SNP_file/out.pairwiseMatrix.tsv dist=path_to_dist</pre>
+<pre>java -jar OutbreakFinder.jar mode=lyve-set pairwiseMatrix=path_to_SNP_file/out.pairwiseMatrix.tsv dist=path_to_dist</pre>
 
 <li><p>Example for generating MDS by using multiple alignment result from Parsnp<br/>
 Before plotting MDS figure, a Parsnp multiple alignment file must be prepared (the file named parsnp.xmfa). We can issue following command to plot MDS figure: <br/>
-  <pre>java -jar mds.jar mode=parsnp xmfa=path_to_parsnp_file/parsnp.xmfa dist=path_to_dist</pre>
+  <pre>java -jar OutbreakFinder.jar mode=parsnp xmfa=path_to_parsnp_file/parsnp.xmfa dist=path_to_dist</pre>
 
 <li><p>Affinity Propagation<br/>
 All of MDS coordinate file, file extension with coods, can be cluster by affinity propagation. We can issue following command to plot MDS figure, which clustered by affinity propagation:<br/>
-<pre>java -cp mds.jar utils.AffinityPropagation -label coods=path_to_coods dist=path_to_dist</pre>
+<pre>java -cp OutbreakFinder.jar utils.AffinityPropagation -label coods=path_to_coods dist=path_to_dist</pre>
 
 
